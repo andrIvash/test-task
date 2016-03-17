@@ -1,7 +1,7 @@
 <h3>test-task</h3>
-Шаблон тестового задания на курс продвинутой веб разработки от LoftSchool - (jade, sass, jquery)
+Шаблон тестового задания на курс продвинутой веб разработки от [LoftSchool](http://loftschool.com) - (jade, sass, jquery)
 
-Demo: 
+Demo: [http://anivash.com/samples/task/](http://anivash.com/samples/task/)
 
 
 Для запуска:
