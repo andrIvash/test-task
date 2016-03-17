@@ -1,0 +1,17 @@
+//_footer.scss
+
+.footer {
+  min-width: 1200px;
+  min-height: 73px;
+  background-color: $color-black;
+  padding-top: 12px;
+
+}
+.copyright {
+  color: $color-white ;
+  font-family: "fira_sansmedium";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+ 
+}

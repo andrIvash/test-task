@@ -1,0 +1,60 @@
+//_set.scss
+
+html, body {
+    height: 100%;
+    font-size: 1em; //16px;
+    line-height: 1.4;
+} 
+
+/* прибьём футер к низу*/
+.wrapper{
+  position: relative;
+  min-height: 100%; 
+  min-width: 1200px; 
+  height: auto!important;
+  overflow: hidden;
+}  
+.wrapper:after {
+  content: "";
+  height: 73px;
+  display: block;
+}
+
+/* прибьём футер к низу - конец*/
+
+
+/* variables _________________________________________________________________*/
+
+
+  /* fonts*/
+  $sans: 'fira_sansregular';
+  $sans_bold: 'fira_sansbold';
+  $sans_light: 'fira_sanslight';
+  $sans_medium: 'fira_sansmedium';
+
+  $color-green: #8cc34b;
+  $color-greylight: #d9d7dc;
+  $color-white: #fff; 
+  $color-grey: #f6f7f2;
+  $color-greydark: #888886;
+  $color-black: #000000;
+  
+/* variables end _________________________________________________________________*/
+
+/* clear _____________________________________________________________________*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+/* clear end _____________________________________________________________________*/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+} 

@@ -1,0 +1,324 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/* прибьём футер к низу*/
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 1200px;
+  height: auto !important;
+  overflow: hidden; }
+
+.wrapper:after {
+  content: "";
+  height: 73px;
+  display: block; }
+
+/* прибьём футер к низу - конец*/
+/* variables _________________________________________________________________*/
+/* fonts*/
+/* variables end _________________________________________________________________*/
+/* clear _____________________________________________________________________*/
+.clearfix:before, .user:before,
+.clearfix:after,
+.user:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after, .user:after {
+  clear: both; }
+
+/* clear end _____________________________________________________________________*/
+.header {
+  color: #FFF;
+  font-family: 'fira_sansbold';
+  font-size: 21px;
+  font-weight: 500;
+  background-color: #8cc34b;
+  padding-top: 14px;
+  min-height: 90px; }
+  .header .container {
+    width: 1200px;
+    position: relative; }
+
+.user {
+  width: 380px;
+  margin-left: 30px; }
+  .user .user__img-wrapper {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px #f6f7f2 solid;
+    float: left; }
+    .user .user__img-wrapper .user__photo {
+      width: 100%;
+      height: auto; }
+  .user .user__info {
+    width: 300px;
+    float: right; }
+    .user .user__info .user__name {
+      color: #fff;
+      font-family: "fira_sansregular";
+      font-size: 21px; }
+    .user .user__info .user__mail .user__link {
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.7;
+      color: #FFF;
+      font-family: "fira_sanslight";
+      font-size: 14px;
+      font-weight: 400; }
+    .user .user__info .user__mail .user__link:hover {
+      text-decoration: none;
+      color: #d9d7dc; }
+
+.socials {
+  position: absolute;
+  top: 13px;
+  right: 30px; }
+  .socials .socials__list {
+    margin: 0;
+    padding: 0;
+    min-width: 140px; }
+    .socials .socials__list .socials__item {
+      list-style: none;
+      display: inline-block;
+      width: 40px;
+      height: 30px;
+      margin-left: 10px; }
+      .socials .socials__list .socials__item .socials__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        text-indent: -99999px;
+        background: url(../img/spritesheet.png) no-repeat center center; }
+      .socials .socials__list .socials__item .socials__link.socials__link.vk {
+        margin-top: 10px; }
+      .socials .socials__list .socials__item .socials__link.gt {
+        background-position: -60px -60px; }
+      .socials .socials__list .socials__item .socials__link.sk {
+        background-position: -360px -60px; }
+      .socials .socials__list .socials__item .socials__link.vk {
+        background-position: -660px -57px; }
+      .socials .socials__list .socials__item .socials__link.gt:hover {
+        background-position: -210px -60px; }
+      .socials .socials__list .socials__item .socials__link.sk:hover {
+        background-position: -510px -60px; }
+      .socials .socials__list .socials__item .socials__link.vk:hover {
+        background-position: -819px -57px; }
+    .socials .socials__list .socials__item:last-child {
+      margin-top: 5px; }
+
+.line {
+  display: block;
+  content: "";
+  height: 6px;
+  background: linear-gradient(to bottom, rgba(204, 204, 204, 0.14) 0%, #ebebeb 100%); }
+
+.footer {
+  min-width: 1200px;
+  min-height: 73px;
+  background-color: #000000;
+  padding-top: 12px; }
+
+.copyright {
+  color: #fff;
+  font-family: "fira_sansmedium";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center; }
+
+.wrapper {
+  background: url("../img/gplaypattern.png"); }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+.section {
+  padding: 20px 0px;
+  margin-bottom: 20px; }
+
+.section__title {
+  margin: 0;
+  font-family: "fira_sansmedium";
+  font-size: 42px;
+  font-weight: 500;
+  font-color: #000000;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.section__desq {
+  font-family: "fira_sanslight";
+  font-size: 21px;
+  font-weight: 300;
+  color: #888886;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.main-info {
+  background-color: #fff; }
+
+.main-info__list {
+  margin: 0;
+  padding: 0;
+  font-family: "fira_sansregular";
+  font-size: 16px;
+  font-weight: 300; }
+  .main-info__list .main-info__item {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin-left: 20px;
+    padding-left: 160px; }
+  .main-info__list .main-info__item_about {
+    background: url("../img/hello.png") no-repeat top left; }
+  .main-info__list .main-info__item_exp {
+    background: url("../img/experience.png") no-repeat top left; }
+  .main-info__list .main-info__title {
+    color: #000000;
+    font-family: "fira_sansmedium";
+    font-size: 21px;
+    font-weight: 400; }
+  .main-info__list .main-info__item:nth-child(2n-1) {
+    margin-left: 0px; }
+
+.study {
+  position: relative;
+  min-height: 1022px; }
+
+.study__list {
+  margin: 0;
+  padding: 0; }
+  .study__list .study__item {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin-left: 20px; }
+  .study__list .study__item:nth-child(3n-2) {
+    margin-left: 0; }
+
+.course {
+  box-sizing: border-box;
+  font-family: "fira_sansregular";
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #fff;
+  box-shadow: 0px 6px 6px 0px rgba(87, 87, 87, 0.38);
+  position: relative;
+  margin-bottom: 20px; }
+  .course .course__img-wrapper {
+    height: 165px;
+    width: 300px;
+    overflow: hidden;
+    position: relative; }
+    .course .course__img-wrapper .coure__img {
+      width: 100%;
+      height: auto; }
+  .course .course__text {
+    margin: 0px 10px; }
+    .course .course__text .course__title {
+      font-size: 1.2rem;
+      color: #000000;
+      margin-bottom: 10px;
+      padding-top: 10px; }
+    .course .course__text .course__desq {
+      font-size: 1rem;
+      color: #888886;
+      margin-bottom: 10px; }
+    .course .course__text .course__time {
+      font-size: 0.9rem;
+      color: #d9d7dc;
+      margin-bottom: 10px; }
+  .course .course__footer {
+    background-color: #f6f7f2;
+    padding: 10px 10px;
+    position: relative; }
+    .course .course__footer .course__check {
+      display: none; }
+    .course .course__footer .course__label {
+      margin-left: 50px;
+      display: inline-block;
+      cursor: pointer;
+      font-family: "fira_sansregular";
+      font-size: 18px;
+      font-weight: 400; }
+    .course .course__footer .course__label:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      background-color: #fff;
+      border: 2px solid #888886;
+      border-radius: 2px; }
+    .course .course__footer .course__label:hover {
+      color: #8cc34b; }
+    .course .course__footer .course__check:checked + .course__label:before {
+      content: "\2713";
+      background-color: #8cc34b;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      line-height: 20px; }
+    .course .course__footer .course__check:checked + .course__label {
+      color: #8cc34b; }
+    .course .course__footer .course__check + .course__label:hover:before {
+      content: "\2713";
+      background-color: #8cc34b;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      line-height: 20px; }
+
+.study__item:hover {
+  cursor: pointer;
+  box-shadow: 0px 6px 16px 0px rgba(87, 87, 87, 0.38); }
+  .study__item:hover .course__img-wrapper:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: #8cc34b; }
+  .study__item:hover .course__title {
+    color: #8cc34b; }
+
+.course__hover {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(236, 244, 226, 0.6);
+  z-index: 100; }
+
+.study__item_msg {
+  display: inline-block;
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  font-size: 2rem;
+  font-family: "fira_sansregular";
+  color: #8cc34b;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  margin: auto; }

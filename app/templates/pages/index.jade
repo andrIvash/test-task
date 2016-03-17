@@ -1,0 +1,131 @@
+extends ../layouts/main_layout
+include ../common/mixin
+
+block title
+  title LoftSchool Test task
+
+block content
+  // -------------- section info
+  section.section.main-info
+    .container
+      h2.section__title О будущем ученике
+      .section__desq Ребятам из LoftSchool будет полезно узнать немного обо мне
+      ul.main-info__list
+        li.main-info__item.main-info__item_about
+          .main-info__title Немного обо мне
+          .main-info__text 
+            |Я живу в Санкт-Петербурге (Россия). Мне
+            |26 лет. Высшее образование  - закончил НИУ ИТМО.
+            | Опыт в разработке 1 год. Уже окончил курсы в 
+            |Академии программирования, где не плохо научился
+            |верстать.
+            |Пока есть только один сайт, которым могу похвастаться
+            a.main-info__link(href="#") www.yandex.ru
+        li.main-info__item.main-info__item_exp
+          .main-info__title Мой опыт в веб разработке
+          .main-info__text
+            | В этом блоке я расскажу о себе, что я уже умею.
+            | Здесь я укажу другие курсы, которые до этого я 
+            | уже проходил. Могу перечислить технологии, которыми умею
+            | полльзоваться. К примеру: html5, css3, sass, jade, git 
+            | и пр.
+  // ------------- end section info
+  // -------------- section courses
+  section.section.study
+    .container
+      h2.section__title Курсы на LoftBlog
+      .section__desq которые помогут в выполнении этого задания
+      ul.study__list
+        li.study__item.course
+          .course__hover
+          .course__img-wrapper
+            img.coure__img(src="img/bg-js.png" alt="Основы JavaScript")
+          .course__text    
+            .course__title Основы JavaScript
+            .course__desq
+              |Видеокурс о одном из самых популярных языков программирования
+              | - Javascript. Изучая этот курс вы познаете это прекрасный
+              | язык от самых основ
+            .course__time &#8986; 24 урока (6 часов 45 минут)
+          .course__footer
+            input.course__check(id="check-js" type="checkbox" name="check-js" value="js")
+            label.course__label(for="check-js") Посмотрел 
+
+        li.study__item.course
+          .course__hover
+          .course__img-wrapper
+            img.coure__img(src="img/jq-back.png" alt="Основы JavaScript")
+          .course__text    
+            .course__title Основы JQUERY
+            .course__desq
+              |Видеокурс о одном из самых популярных языков программирования
+              | - Javascript. Изучая этот курс вы познаете это прекрасный
+              | язык от самых основ
+            .course__time &#8986; 11 уроков (2 часа 6 минут)
+          .course__footer
+            input.course__check( id="check-jq" type="checkbox" name="check-js" value="js")
+            label.course__label.dv(for="check-jq") Посмотрел    
+
+        li.study__item.course
+          .course__hover
+          .course__img-wrapper
+            img.coure__img(src="img/Layer-5.png" alt="Базовые элементы страницы")
+          .course__text    
+            .course__title Базовые элементы страницы
+            .course__desq
+              |Видеокурс по верстке и программированию основных
+              |и популярных элементов сайтов. Посмотрев 
+              | этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и.т.д.
+            .course__time &#8986; 9 уроков (2 часа 7 минут)
+          .course__footer
+            input.course__check(id="check-base" type="checkbox" name="check-js" value="js")
+            label.course__label.tr(for="check-base") Посмотрел
+
+        li.study__item.course
+          .course__hover
+          .course__img-wrapper
+            img.coure__img(src="img/Layer-9.png" alt="Создание адаптивных сайтов")
+          .course__text    
+            .course__title Создание адаптивных сайтов
+            .course__desq
+              |В этом курсе вы узнаете как создавать
+              | адаптивные сайты, что такое
+              | фдфптивна верстка и дизайн
+            .course__time &#8986; 7 уроков (2 часа 11 минут)
+          .course__footer
+            input.course__check(id="check-ad" type="checkbox" name="check-js" value="js")
+            label.course__label.tr(for="check-ad") Посмотрел
+
+        li.study__item.course
+          .course__hover
+          .course__img-wrapper
+            img.coure__img(src="img/Layer-8.png" alt="Версткка генератора кнопок")
+          .course__text    
+            .course__title Версткка генератора кнопок
+            .course__desq
+              |В этом видеокурсе вы изучете инструменты, техники и подходы
+              | для web-разработчика, которые помогут вам решать поставленные задачи
+              |  более быстро и эффективно
+            .course__time &#8986; 6 уроков (1 час 9 минут)
+          .course__footer
+            input.course__check(id="check-but" type="checkbox" name="check-js" value="js")
+            label.course__label.tr(for="check-but") Посмотрел
+
+        li.study__item.course
+          .course__hover
+          .course__img-wrapper
+            img.coure__img(src="img/Layer-7.png" alt="Версткка адаптивной css галереи")
+          .course__text    
+            .course__title Версткка адаптивной css галереи
+            .course__desq
+              |В этом курсе мы разберем как сверстать адаптивную css галерею.
+              | Также познакоимся с Flexbox
+            .course__time &#8986; 6 уроков (1 час 9 минут)
+          .course__footer
+            input.course__check(id="check-gal" type="checkbox" name="check-js" value="js")
+            label.course__label.tr(for="check-gal") Посмотрел          
+  // -------------- end section courses
+
+
+
+

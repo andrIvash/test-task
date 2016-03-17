@@ -1,0 +1,125 @@
+//_header.scss
+
+//---------------------------------------- header
+.header { 
+  color: #FFF;
+  font-family: 'fira_sansbold';
+  font-size: 21px;
+  font-weight: 500;
+  background-color: $color-green;
+  padding-top: 14px;
+  min-height: 90px;
+  
+  .container {
+    width: 1200px;
+    position: relative;
+  }
+  
+}
+//---------------------------------------- end header
+
+//---------------------------------------- user info
+.user {
+  width: 380px;
+  margin-left: 30px;
+  @extend .clearfix;
+
+  .user__img-wrapper{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px $color-grey solid;
+    float: left;
+
+    .user__photo {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .user__info {
+    width: 300px;
+    float: right;
+
+    .user__name {
+      color: $color-white;
+      font-family: "fira_sansregular";
+      font-size: 21px;
+    }
+    .user__mail {
+      .user__link {
+        color: $color-white;
+        text-decoration: none; 
+        opacity: 0.7;
+        color: #FFF;
+        font-family: "fira_sanslight";
+        font-size: 14px;
+        font-weight: 400;
+        
+      }
+      .user__link:hover {
+        text-decoration: none;
+        color: $color-greylight;
+      }
+
+    }
+  }
+}
+//---------------------------------------- end user info
+
+//---------------------------------------- socials
+.socials {
+  position: absolute;
+  top:13px;
+  right: 30px;
+
+  .socials__list {
+    margin:0;
+    padding: 0;
+    min-width: 140px;
+       
+    .socials__item {
+      list-style: none;
+      display: inline-block;
+      width:40px;
+      height:30px;
+      margin-left: 10px;
+
+      .socials__link {
+        display: block;
+        width:100%;
+        height:100%;
+        text-decoration: none;
+        text-indent: -99999px;
+        background: url(../img/spritesheet.png) no-repeat center center;
+      }
+      .socials__link.socials__link.vk {
+        margin-top: 10px;
+      }
+
+      .socials__link.gt {background-position: -60px -60px; }
+      .socials__link.sk { background-position: -360px -60px; }
+      .socials__link.vk {background-position: -660px -57px;  }
+      
+      .socials__link.gt:hover {background-position: -210px -60px;  }
+      .socials__link.sk:hover { background-position: -510px -60px;  }
+      .socials__link.vk:hover {background-position: -819px -57px;  }
+    }
+    .socials__item:last-child {
+      margin-top: 5px;
+    }
+    
+  }
+}
+//---------------------------------------- end socials
+
+//---------------------------------------- header shadow
+.line {
+  display: block;
+  content: "";
+  height: 6px;
+  background: linear-gradient(to bottom, rgba(204,204,204,0.14) 0%,rgba(235,235,235,1) 100%);
+}
+
+//---------------------------------------- end header shadow
